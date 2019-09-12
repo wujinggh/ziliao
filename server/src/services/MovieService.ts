@@ -15,7 +15,7 @@ export class MovieService {
     }
     public static async edit(id: string, movie: Movie): Promise<string[]> {
         const movieObj = Movie.transform(movie);
-        const errors = await movie.validateThis();
+        const errors = await movieObj.validateThis();
         if (errors.length > 0) {
             return errors;
         }
