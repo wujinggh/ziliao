@@ -7,7 +7,7 @@ export class Movie extends BaseEntity {
     public name: string;
 
     @IsNotEmpty({message: '电影类型不可以为空'})
-    @ArrayMinSize(1,{message: '电影类型至少有一个'})
+    @ArrayMinSize(1, {message: '电影类型至少有一个'})
     @IsArray({message: '电影类型必须是数组'})
     @Type(() => String)
     public types: string[];
