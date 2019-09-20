@@ -1,0 +1,57 @@
+﻿/*
+ * 基架
+ */
+
+/* html, body */
+body {
+  font-family: "Microsoft Yahei", "微软雅黑", "Hiragino Sans GB",  Arial, Simsun, sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #343434;
+  background-color: #f8f6f6;
+}
+
+/* a */
+a {
+  cursor: pointer;
+  color: #343434;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    color: #343434;
+    /* text-decoration: underline;*/
+  }
+
+  &:focus {
+    utline: thin dotted #333;
+    /* Webkit*/
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+  }
+}
+
+/* lazy-img bg */
+img[data-lazy-img] {
+  background-color: #999;
+}
+
+/* hidden */
+.g-hidden {
+  display: none!important;
+}
+
+/* overflow: hidden */
+.g-noverflow {
+  overflow: hidden;
+}
+
+.g-wrapper {
+  width: 1200px;
+  padding: 0 10px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+
+

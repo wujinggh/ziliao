@@ -1,0 +1,264 @@
+*{margin:0;padding:0;-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-text-size-adjust:none;-webkit-user-select:none;-ms-user-select:none;user-select:none;font-family:Arial, "微软雅黑";}
+img{border:none;max-width:100%;vertical-align:middle;}
+body,p,form,input,button,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6{margin:0;padding:0;list-style:none;overflow-x:hidden}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+input,textarea{-webkit-user-select:text;-ms-user-select:text;user-select:text;-webkit-appearance:none;font-size:1em;line-height:1.5em;}
+table{border-collapse:collapse;}
+input,select,textarea{outline:none;border:none;background:none;}
+a{outline:0;cursor:pointer;}
+a:link,a:active{text-decoration:none;}
+a:visited{text-decoration:none;}
+a:hover{color:#f00;text-decoration:underline;}
+a{text-decoration:none;-webkit-touch-callout:none;}
+em,i{font-style:normal;}
+li,ol{list-style:none;}
+html{font-size:10px;}
+
+body{ margin:0 auto;max-width:640px; min-width:320px;background:#fff;height:100%;}
+.wrapper{
+    .user-info{
+        height: 1rem;
+        background: #dcecf2;
+        line-height: 1rem;
+        overflow: hidden;
+        padding: 0 0.3rem;
+        .pic{
+            float:left;
+            box-sizing: border-box;
+            padding-top: 0.1rem;
+            margin-right: 0.2rem;
+            img{
+                width: 0.8rem;
+                height: 0.8rem;
+                border-radius: 50%;
+                display: block;
+            }
+        }
+        .tit{
+            float:left;
+            font-size: 0.28rem;
+        }
+        .currentIndex{
+            float:right;
+            font-size: 0.24rem;
+            span{
+                font-size: 0.3rem;
+                color: #1d80d7;
+            }
+        }
+    }
+    
+    .first-page{
+        width: 100%;
+        height: 100vh;
+        background: url(http://s.diyigaokao.com/occupationtest/images/bg_1.jpg) no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
+        padding-top: 4.7rem;
+        text-align: center;
+        a{
+            display: block;
+            margin: 0 auto;
+            background: #ff8494;
+            border:none;
+            outline: none;
+            width: 2.34rem;
+            height: 0.6rem;
+            line-height: 0.6rem;
+            font-size: 0.3rem;
+            border-radius: 0.3rem;
+            text-transform:uppercase;
+            color: #fff;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    }
+    .second-page{
+        height: 100vh;
+        background: url(http://s.diyigaokao.com/occupationtest/images/bg_2.jpg) no-repeat center bottom;
+        background-size: contain; 
+        
+        .que-cont{
+            padding: 0.96rem 0.3rem 0;
+            .question{
+                .tit{
+                    font-size: 0.3rem;
+                    color: #000;
+                    margin-bottom: 0.4rem;
+                    padding-left: 0.34rem;
+                }
+                .options{
+                    button{
+                        display: block;
+                        width: 100%;
+                        box-sizing: border-box;
+                        text-align: left;
+                        margin-bottom: 0.3rem;
+                        background: none;
+                        outline: none;
+                        border: 1px #e5e5e5 solid;
+                        padding: 0.24rem  0.34rem;
+                        font-size: 0.28rem;
+                        color: #666666;
+                        &.active{
+                            background: #1d80d7;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .three-page{
+        height: 100vh;
+        position: relative;
+        background: url(http://s.diyigaokao.com/occupationtest/images/bg_3.jpg) no-repeat center bottom;
+        background-size: cover; 
+        .user-info{
+            background: none;
+            position: absolute;
+            left:0;
+            top:0;
+            width: 100%;
+        }
+        .content{
+            text-align: center;
+            img{
+                width: 100%;
+                object-fit:cover
+            }
+            // .occ-name{
+            //     font-size: 0.48rem;
+            //     color: #1d80d7;
+            //     margin-top: 0.5rem;
+            // }
+            // .occ-cont{
+            //     position: relative;
+            //     margin: 0.7rem auto 0;
+            //     width: 6.9rem;
+            //     height: 6rem;
+            //     .keyword{
+            //         position: absolute;
+            //         width: 1.74rem;
+            //         height: 0.88rem;
+            //         box-sizing: border-box;
+            //         padding-bottom: 0.24rem;
+            //         line-height: 0.64rem;
+            //         font-size: 0.3rem;
+            //         color: #fff;
+            //         z-index: 3;
+            //         &.keyword-1{
+            //             left: 0.52rem;
+            //             top: 0;
+            //             background: url(http://s.diyigaokao.com/occupationtest/images/keyword_1.png) no-repeat;
+            //             background-size: cover;
+            //         }
+            //         &.keyword-2{
+            //             right:0.52rem;
+            //             top: 0;
+            //             background: url(http://s.diyigaokao.com/occupationtest/images/keyword_2.png) no-repeat;
+            //             background-size: cover;
+            //         }
+            //         &.keyword-3{
+            //             left:0;
+            //             top: 1.6rem;
+            //             background: url(http://s.diyigaokao.com/occupationtest/images/keyword_3.png) no-repeat;
+            //             background-size: cover;
+            //         }
+            //         &.keyword-4{
+            //             right:0;
+            //             top: 1.6rem;
+            //             background: url(http://s.diyigaokao.com/occupationtest/images/keyword_4.png) no-repeat;
+            //             background-size: cover;
+            //         }&.keyword-5{
+            //             left:0.28rem;
+            //             top: 3.4rem;
+            //             background: url(http://s.diyigaokao.com/occupationtest/images/keyword_6.png) no-repeat;
+            //             background-size: cover;
+            //         }
+            //         &.keyword-6{
+            //             right:0.28rem;
+            //             top: 3.4rem;
+            //             background: url(http://s.diyigaokao.com/occupationtest/images/keyword_5.png) no-repeat;
+            //             background-size: cover;
+            //         }
+                    
+            //     }
+            //     .person{
+            //         z-index: 3;
+            //         position: absolute;
+            //         width: 2.7rem;
+            //         height: 6.6rem;
+            //         left:50%;
+            //         top:44%;
+            //         margin: -3.3rem 0 0 -1.35rem;
+            //         img{
+            //             width: 100%;
+            //         }
+            //     }
+            // }
+            // .description{
+            //     height: 2.84rem;
+            //     background: #8ba1bf;
+            //     padding:0 0.28rem;
+            //     box-sizing: border-box;
+            //     font-size: 0.28rem;
+            //     color: #fff;
+            //     line-height: 2.84rem;
+            //     font-family: "楷体";
+            //     text-align: justify;
+            //     margin:0 0.3rem;
+            //     p{
+            //         display: inline-block;
+            //         vertical-align: middle;
+            //         line-height: 0.42rem;
+            //     }
+            // }
+        }
+        // .ewm{
+        //     overflow: hidden;
+        //     position: absolute;
+        //     left:0;
+        //     width: 100%;
+        //     bottom:0;
+        //     padding: 0.14rem 0.3rem;
+        //     box-sizing: border-box;
+        //     background: #fff;
+        //     .logo{
+        //         float:left;
+        //         img{
+        //             width: 1.08rem;
+        //             height: 1.06rem;
+        //         }
+        //     }
+        //     .txt{
+        //         float:right;
+        //         text-align: right;
+        //         color: #484848;
+        //         padding-right: 0.3rem;
+        //         padding-top: 0.24rem;
+        //         i{
+        //             display: block;
+        //             font-size: 0.26rem;
+        //             margin-bottom: 0.2rem;
+        //         }
+        //         span{
+        //             display: block;
+        //             font-size: 0.24rem;
+        //         }
+
+        //     }
+        //     .pic{
+        //         float:right;
+        //         img{
+        //             width: 1.4rem;
+        //             height: 1.4rem;
+        //         }
+        //     }
+        // }
+
+    }
+    .g-hidden{
+        display: none;
+    }
+}

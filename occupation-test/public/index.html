@@ -1,0 +1,82 @@
+<!doctype html>
+<!--[if IE 8]><html class="ie8 lte9" lang="zh-CN"><![endif]-->
+<!--[if IE 9]><html class="ie9 lte9" lang="zh-CN"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="zh-CN">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="applicable-device" content="pc,mobile">
+    <title>遇见未来的自己</title>
+    <meta name="keywords" content="遇见未来的自己">
+    <meta name="description" content="遇见未来的自己">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+        href="http://www.diyigaokao.com/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="http://s.diyigaokao.com/v4/sprite/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="http://s.diyigaokao.com/v4/sprite/favicon.ico">
+    <script type="text/javascript">
+
+        /* 页面适应多屏缩放设置 start */
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                dpr = window.devicePixelRatio || 1,
+                resizeEvt = 'onorientationchange' in window ? 'onorientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 750) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';
+                    }
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            recalc();
+            //doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+        /* 页面适应多屏缩放设置 end */
+    </script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- <div class="first-page" id="J-first-page">
+            <button id="start">start</button>
+        </div> -->
+        <div class="second-page" id="J-second-page">
+            <div class="user-info">
+               
+            </div>
+            <div class="que-cont">
+                
+            </div>
+        </div>
+        <div class="three-page g-hidden" id="J-three-page">
+            <div class="user-info">
+                
+            </div>
+            <div class="content">
+                
+            </div>
+            <!-- <div class="ewm">
+                <div class="logo"><img src="../src/images/logo.jpg" alt=""></div>
+                
+                <div class="pic"><img src="../src/images/ewm.jpg" alt=""></div>
+                <div class="txt">
+                    <p>
+                        <i>截图保存结果 | 立即分享图片 ></i>
+                        <span>扫描测试</span>
+                    </p>
+                </div>
+            </div> -->
+        </div>
+        
+    </div>
+</body>
+
+</html>
