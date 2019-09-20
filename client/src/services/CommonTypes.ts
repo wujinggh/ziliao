@@ -1,4 +1,3 @@
-import { IMovie } from "./MovieService";
 
 export type IResponseData<T> = {
     err: '';
@@ -17,6 +16,11 @@ export interface IResponsePageData<T> {
     data: T[];
     err:'';
     total: number;
+}
+export enum SwitchType {
+    isHot = 'isHot',
+    isComing = 'isComing',
+    isClassic = 'isClassic'
 }
 
 

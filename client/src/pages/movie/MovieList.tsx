@@ -1,4 +1,4 @@
-import  React, { Dispatch }  from "react";
+import { Dispatch }  from "react";
 import MovieTable, { IMovieTableEvents } from "../../components/MovieTable"
 import { connect } from "react-redux"
 import { IRootState } from "../../redux/reducers/RootReducer";
@@ -16,7 +16,29 @@ function mapDispatchToProps(dispatch: Dispatch<any>): IMovieTableEvents{
                 key: '',
                 page: 1
             }))
+        },
+        onSwitchChange(type,newState,id){
+            dispatch(MovieAction.changeSwitch(type, newState, id));
+        },
+        async onDelete(id:string){
+            await dispatch(MovieAction.deleteMovie(id))
+        },
+        onChange(newPage) {
+            dispatch(MovieAction.fetchMovies({
+                page: newPage
+            }))
+        },
+        onKeyChange(key) {
+            dispatch(MovieAction.setConditionAction({
+                key
+            }))
+        },
+        onSearch() {
+            dispatch(MovieAction.fetchMovies({
+                page: 1
+            }))
         }
+
     }
 
 }

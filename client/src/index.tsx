@@ -3,9 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import 'antd/dist/antd.css'
 import App from './App';
-import { store } from './redux/store';
-import MovieAction from './redux/actions/MovieAction';
-import { MovieService } from './services/MovieService';
+// import { store } from './redux/store';
+// import MovieAction from './redux/actions/MovieAction';
+// import { MovieService } from './services/MovieService';
 
 
 // store.dispatch(MovieAction.fetchMovies({

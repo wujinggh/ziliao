@@ -3,7 +3,7 @@ import { validate } from 'class-validator';
 import { ClassType } from 'class-transformer/ClassTransformer';
 export abstract class BaseEntity {
 
-    public async validateThis(skipMissing = false): Promise<string[]>{
+    public async validateThis(skipMissing = true): Promise<string[]>{
         const errors = await validate(this, {
             skipMissingProperties: skipMissing,
         });
@@ -14,7 +14,6 @@ export abstract class BaseEntity {
         });
         return result;
     }
-
     protected static baseTransform<T>(cls: ClassType<T>, plainObject: object): T {
         if (plainObject instanceof cls) {
             return plainObject;
