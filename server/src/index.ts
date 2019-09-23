@@ -14,7 +14,8 @@ app.use(Express.json()); // 配置中间件，用于解析请求消息体中的j
 
 // 使用postman进行测试
 app.use('/api/movie', MovieRouter);
+
 // 文件上传
 app.use('/api/upload', UploadRouter);
 
-app.listen(3000);
+app.listen(3002);
